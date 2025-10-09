@@ -1,0 +1,139 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Elegant Sage & Beige Color Scheme */
+    --background: 34 40% 97%;
+    --foreground: 26 18% 18%;
+
+    --card: 32 35% 98%;
+    --card-foreground: 26 18% 18%;
+
+    --popover: 32 35% 98%;
+    --popover-foreground: 26 18% 18%;
+
+    /* Sage Green Primary - Natural & Calming */
+    --primary: 150 26% 42%;
+    --primary-foreground: 0 0% 99%;
+    --primary-light: 150 28% 52%;
+    --primary-dark: 150 30% 34%;
+
+    /* Warm Beige Secondary */
+    --secondary: 28 32% 93%;
+    --secondary-foreground: 26 18% 18%;
+    --secondary-light: 30 30% 96%;
+    --secondary-dark: 28 28% 90%;
+
+    /* Sage tertiary for consistency */
+    --tertiary: 150 26% 42%;
+    --tertiary-foreground: 0 0% 99%;
+    --tertiary-light: 150 28% 52%;
+    --tertiary-dark: 150 30% 34%;
+
+    /* Soft neutral separators */
+    --muted: 32 24% 95%;
+    --muted-foreground: 28 12% 42%;
+
+    --accent: 150 26% 42%;
+    --accent-foreground: 0 0% 99%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 22% 90%;
+    --input: 32 30% 96%;
+    --ring: 150 26% 42%;
+
+    --radius: 0.5rem;
+
+    /* Elegant Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.25) 0%, hsl(var(--secondary) / 0.4) 100%);
+    
+    /* Soft Shadows */
+    --shadow-primary: 0 6px 24px -6px hsl(var(--primary) / 0.16);
+    --shadow-secondary: 0 6px 20px -6px hsl(var(--primary) / 0.1);
+    --shadow-soft: 0 2px 18px -4px hsl(26 18% 18% / 0.08);
+    --shadow-premium: 0 10px 34px -10px hsl(26 18% 18% / 0.14);
+
+    /* Smooth Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 30 15% 12%;
+    --foreground: 30 10% 90%;
+
+    --card: 30 15% 15%;
+    --card-foreground: 30 10% 90%;
+
+    --popover: 30 15% 12%;
+    --popover-foreground: 30 10% 90%;
+
+    --primary: 150 26% 42%;
+    --primary-foreground: 30 15% 12%;
+    --primary-light: 150 28% 52%;
+    --primary-dark: 150 30% 34%;
+
+    --secondary: 30 10% 20%;
+    --secondary-foreground: 30 10% 85%;
+    --secondary-light: 30 10% 25%;
+    --secondary-dark: 30 15% 15%;
+
+    --tertiary: 150 26% 42%;
+    --tertiary-foreground: 30 15% 12%;
+    --tertiary-light: 150 28% 52%;
+    --tertiary-dark: 150 30% 34%;
+
+    --muted: 30 10% 20%;
+    --muted-foreground: 30 5% 60%;
+
+    --accent: 150 26% 42%;
+    --accent-foreground: 30 15% 12%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 10% 25%;
+    --input: 30 10% 20%;
+    --ring: 150 26% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Safe area insets for mobile devices */
+  .safe-area-inset-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-area-inset-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  /* Touch manipulation for better mobile UX */
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+
+  /* Focus styles for accessibility */
+  .focus-visible:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
