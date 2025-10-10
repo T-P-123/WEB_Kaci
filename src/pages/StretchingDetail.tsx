@@ -158,7 +158,7 @@ const StretchingDetail = () => {
                       <Calendar className="w-5 h-5 text-primary" />
                       <div>
                         <p className="font-semibold">Termín</p>
-                        <p className="text-gray-600">Každou středu 06:00-07:00</p>
+                        <p className="text-gray-600">Středa od 06:00</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -175,13 +175,6 @@ const StretchingDetail = () => {
                       <div>
                         <p className="font-semibold">Kapacita</p>
                         <p className="text-gray-600">Min. 5 osob</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Clock className="w-5 h-5 text-primary" />
-                      <div>
-                        <p className="font-semibold">Storno podmínky</p>
-                        <p className="text-gray-600">Do 20:00 den předem (úterý)</p>
                       </div>
                     </div>
                   </div>

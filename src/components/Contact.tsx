@@ -27,9 +27,7 @@ const Contact = () => {
             <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6 text-foreground">
               Kontakt
             </h2>
-            <p className="text-xl text-foreground/70 max-w-3xl mx-auto mb-4 font-medium">
-              Máš dotaz? Napiš mi a odpovím do 24 h.
-            </p>
+
             <p className="text-lg text-foreground/60 max-w-3xl mx-auto">
               Chceš začít trénovat nebo se na něco zeptat? Ráda si s tebou popovídám!
             </p>

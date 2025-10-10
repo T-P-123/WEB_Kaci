@@ -153,7 +153,7 @@ const RepsRunDetail = () => {
                       <Calendar className="w-5 h-5 text-primary" />
                       <div>
                         <p className="font-semibold">Termín</p>
-                        <p className="text-gray-600">Každé úterý 16:00</p>
+                        <p className="text-gray-600">Úterý od 16:00</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -172,13 +172,7 @@ const RepsRunDetail = () => {
                         <p className="text-gray-600">Min. 5 osob</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <Clock className="w-5 h-5 text-primary" />
-                      <div>
-                        <p className="font-semibold">Storno podmínky</p>
-                        <p className="text-gray-600">Do 12:00 téhož dne</p>
-                      </div>
-                    </div>
+                    
                   </div>
                 </div>
                 <div className="mt-6 p-4 bg-green-50 rounded-lg">

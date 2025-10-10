@@ -136,7 +136,7 @@ const HIITDetail = () => {
                       <Calendar className="w-5 h-5 text-primary" />
                       <div>
                         <p className="font-semibold">Termín</p>
-                        <p className="text-gray-600">Každou neděli 09:00 a středu 17:00–18:00</p>
+                        <p className="text-gray-600">Středa od 17:00 a neděle od 9:00</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -155,13 +155,7 @@ const HIITDetail = () => {
                         <p className="text-gray-600">Min. 4 osoby</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <Clock className="w-5 h-5 text-primary" />
-                      <div>
-                        <p className="font-semibold">Storno podmínky</p>
-                        <p className="text-gray-600">Do 20:00 den předem (sobota)</p>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
                 <div className="mt-6 p-4 bg-green-50 rounded-lg">

@@ -32,9 +32,8 @@ const Lessons = () => {
       equipment: "TRX, kettlebell, expandéry, cviky s vlastní vahou a další pomůcky dostupné v gymu",
       image: lessonPhoto1,
       imageAlt: "HIIT trénink s vysokou intenzitou",
-      schedule: "Každou neděli 09:00 a středu 17:00–18:00",
+      schedule: "Středu od 17:00 a neděli od 9:00",
       price: "190 Kč",
-      cancellation: "do 20:00 den předem (sobota)",
       minCapacity: "Min. kapacita: 4 osoby"
     },
     {
@@ -53,7 +52,7 @@ const Lessons = () => {
       ],
       image: repsRunPhoto,
       imageAlt: "Kombinace běhu a silového tréninku",
-      schedule: "Každé úterý 16:00",
+      schedule: "Úterý od 16:00",
       price: "190 Kč",
       cancellation: "do 12:00 téhož dne",
       minCapacity: "Min. kapacita: 5 osob"
@@ -79,7 +78,7 @@ const Lessons = () => {
       ],
       image: stretchingPhoto,
       imageAlt: "Stretching a mobilita - cvičení pro celé tělo",
-      schedule: "Každou středu 06:00–07:00",
+      schedule: "Středu od 06:00",
       price: "190 Kč",
       cancellation: "do 20:00 den předem (úterý)",
       minCapacity: "Min. kapacita: 5 osob"

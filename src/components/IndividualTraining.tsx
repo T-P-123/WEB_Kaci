@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 import type { LucideIcon } from "lucide-react";
 
 const locations = [
-  "Zeus Power House, Březinova 4690/144, 586 01 Jihlava",
-  "Kamenice nad Lipou - Evolution Gym, Na Kariance 315, 394 70 Kamenice nad Lipou"
+  "Zeus Power House - Březinova 4690/144, 586 01 Jihlava",
+  "Evolution Gym - Na Kariance 315, 394 70 Kamenice nad Lipou"
 ];
 
 const benefits: { title: string; description: string; icon: LucideIcon }[] = [
@@ -70,7 +70,7 @@ const IndividualTraining = () => {
               <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-900">
                 Kde a jak často
               </h3>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <ul className="space-y-5 text-sm text-gray-600">
                 {locations.map((location) => (
                   <li key={location} className="flex items-start gap-2">
                     <MapPin className="mt-1 h-4 w-4 text-primary" />
