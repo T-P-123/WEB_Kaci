@@ -21,6 +21,8 @@ const LessonsSection = () => {
       booking_method: "form",
       booking_url: "",
       descriptionSpacing: "30px",
+      whatsappLink: "https://chat.whatsapp.com/GHHcRaLBN5C6irZ39sxIof?mode=wwt",
+      whatsappMessage: "Ahoj, rada bych si rezervovala lekci Zeny v pohybu.",
     },
     {
       id: 2,
@@ -93,6 +95,22 @@ const LessonsSection = () => {
         setContactModal({ isOpen: true, lessonName: lesson.name });
         break;
     }
+  };
+
+  const handleWhatsAppReservation = (lesson: (typeof lessons)[number]) => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "click_book", {
+        lesson_name: lesson.name,
+        booking_method: "whatsapp",
+      });
+    }
+
+    const whatsappBase = lesson.whatsappLink || "https://wa.me/420734439196";
+    const message = encodeURIComponent(
+      lesson.whatsappMessage || `Ahoj, rada bych si rezervovala lekci ${lesson.name}.`,
+    );
+
+    window.open(`${whatsappBase}?text=${message}`, "_blank", "noopener,noreferrer");
   };
 
   const getButtonText = (lesson: (typeof lessons)[number]) => {
@@ -247,7 +265,14 @@ const LessonsSection = () => {
                       </Button>
                     </Link>
                   )}
-                  {lesson.id !== 1 && (
+                  {lesson.whatsappLink ? (
+                    <Button
+                      onClick={() => handleWhatsAppReservation(lesson)}
+                      className="w-full rounded-2xl bg-primary py-3 font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 hover:bg-primary/90"
+                    >
+                      Rezervovat (WhatsApp)
+                    </Button>
+                  ) : (
                     <Button
                       onClick={() => handleReservation(lesson)}
                       className="w-full rounded-2xl bg-primary py-3 font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 hover:bg-primary/90"
