@@ -1,6 +1,5 @@
 ﻿import heroPhoto from "@/assets/hero-photo-new.jpg";
 import { EnergyIcon, HealthIcon, PracticalIcon, SafetyIcon } from "@/components/ui/icons";
-import MobileStickyButton from "@/components/MobileStickyButton";
 
 const HERO_IMAGE_RIGHT_OFFSET = -25; // px; increase to add more space from the right edge on desktop
 
@@ -43,11 +42,11 @@ const HeroSection = () => {
                 Ukážu ti, že síla nemusí znamenat výkon  ale jistotu, lehkost a radost z pohybu.
               </p>
 
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:justify-items-start">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:justify-items-stretch">
                 {heroBenefits.map(({ icon: Icon, text }) => (
                   <div
                     key={text}
-                    className="flex items-center gap-3 rounded-2xl border border-foreground/10 bg-background/95 px-5 py-4 shadow-[var(--shadow-soft)]"
+                    className="flex h-full w-full items-center gap-3 rounded-2xl border border-foreground/10 bg-background/95 px-5 py-4 shadow-[var(--shadow-soft)]"
                   >
                     <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/15 text-primary">
                       <Icon size={16} />
@@ -82,7 +81,6 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-      <MobileStickyButton />
     </>
   );
 };
