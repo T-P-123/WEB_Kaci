@@ -21,7 +21,7 @@ const HeroSection = () => {
       <section className="relative overflow-hidden bg-background">
 
 
-        <div className="relative mx-auto flex min-h-[85vh] flex-col justify-center px-5 py-16 sm:px-6 lg:min-h-[80vh] lg:max-w-6xl lg:px-10 xl:max-w-7xl xl:px-0 transition-colors">
+        <div className="relative mx-auto flex min-h-[78vh] flex-col justify-center px-5 py-12 sm:px-6 sm:py-16 lg:min-h-[80vh] lg:max-w-6xl lg:px-10 lg:py-20 xl:max-w-7xl xl:px-0 transition-colors">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.7fr)] lg:items-center xl:gap-20">
             <div className="order-1 space-y-8 text-center lg:text-left lg:space-y-10">
               <h1 className="text-4xl font-heading font-bold uppercase leading-[1.05] text-foreground sm:text-5xl xl:text-[3.2rem]">

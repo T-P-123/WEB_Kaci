@@ -13,6 +13,7 @@ import HIITDetail from "./pages/HIITDetail";
 import RepsRunDetail from "./pages/RepsRunDetail";
 import StretchingDetail from "./pages/StretchingDetail";
 import WomenInMotionDetail from "./pages/WomenInMotionDetail";
+import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => {
             <Route path="/reps-run-detail" element={<RepsRunDetail />} />
             <Route path="/stretching-detail" element={<StretchingDetail />} />
             <Route path="/women-in-motion-detail" element={<WomenInMotionDetail />} />
+            <Route path="/blog" element={<Blog />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
